@@ -11,59 +11,62 @@ export const Contents = () => {
 
   return (
     <StyledContents>
+      <StyledActualContents>
+      <div>ここから</div>
       <img src={logo} className="App-logo" alt="logo" />
-      <button type="button" onClick={handleClick}>toggle</button>
+      <button type="button" onClick={handleClick}>
+        {showLongMessage ? 'テキストを隠す' : 'テキストを表示する'}
+      </button>
       {showLongMessage ? (
         <div>
-          <span>aaaaa</span>
+          <span>あいうえお</span>
           <br />
-          <span>aaaaa</span>
+          <span>かきくけこ</span>
           <br />
-          <span>aaaaa</span>
+          <span>さしすせそ</span>
           <br />
-          <span>aaaaa</span>
+          <span>たちつてと</span>
           <br />
-          <span>aaaaa</span>
+          <span>なにぬねの</span>
           <br />
-          <span>aaaaa</span>
+          <span>はひふへほ</span>
           <br />
-          <span>aaaaa</span>
+          <span>まみむめも</span>
           <br />
-          <span>aaaaa</span>
+          <span>やゆよ</span>
           <br />
-          <span>aaaaa</span>
+          <span>らりるれろ</span>
           <br />
-          <span>aaaaa</span>
+          <span>わをん</span>
           <br />
-          <span>aaaaa</span>
+          <span>アイウエオ</span>
           <br />
-          <span>aaaaa</span>
+          <span>カキクケコ</span>
           <br />
-          <span>aaaaa</span>
+          <span>サシスセソ</span>
           <br />
-          <span>aaaaa</span>
+          <span>タチツテト</span>
           <br />
-          <span>aaaaa</span>
+          <span>ナニヌネノ</span>
           <br />
-          <span>aaaaa</span>
+          <span>ハヒフヘホ</span>
           <br />
-          <span>aaaaa</span>
+          <span>マミムメモ</span>
           <br />
-          <span>aaaaa</span>
+          <span>ヤユヨ</span>
           <br />
-          <span>aaaaa</span>
+          <span>ラリルレロ</span>
           <br />
-          <span>aaaaa</span>
-          <br />
-          <span>aaaaa</span>
-          <br />
-          <span>aaaaa</span>
-          <br />
-          <span>aaaaa</span>
-          <br />
-          <span>aaaaa(last)</span>
+          <span>ワヲン</span>
         </div>
-      ) : <div>click above button</div>}
+      ) : null}
+      <br />
+      <StyledMessage>
+        <StyledGray>■</StyledGray>
+        の領域が中央にあればOK
+      </StyledMessage>
+      <div>ここまで</div>
+      </StyledActualContents>
     </StyledContents>
   )
 };
@@ -78,3 +81,21 @@ const StyledContents = styled.div`
   font-size: calc(10px + 2vmin);
   color: white;
 `
+
+const StyledActualContents = styled.div`
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const StyledMessage = styled.span`
+  background-color: whitesmoke;
+  color: black;
+  padding: 8px;
+`;
+
+const StyledGray = styled.span`
+  color: darkgray;
+`;
