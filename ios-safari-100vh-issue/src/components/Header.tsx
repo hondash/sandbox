@@ -16,7 +16,6 @@ const StyledHeader = styled.div`
   position: sticky;
   top: 0;
   flex-basis: 100px;
-  height: 100px;
   color: whitesmoke;
   background-color: darkred;
   display: flex;
