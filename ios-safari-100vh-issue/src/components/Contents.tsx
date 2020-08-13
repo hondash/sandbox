@@ -72,7 +72,7 @@ export const Contents = () => {
 };
 
 const StyledContents = styled.div`
-  flex: 1;
+  flex-grow: 1;
   background-color: #282c34;
   display: flex;
   flex-direction: column;
