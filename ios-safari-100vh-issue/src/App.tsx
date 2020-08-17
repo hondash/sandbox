@@ -1,16 +1,26 @@
 import React from 'react';
-import './App.css';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { Contents } from './components/Contents';
+import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
+
+import './App.css';
+import { FlexPage } from './pages/flex/FlexPage';
+// import { GridPage } from './pages/grid/GridPage';
+import { TopPage } from './pages/top/TopPage';
 
 export const App = () => {
   return (
     <StyledApp>
-      <Header />
-      <Contents />
-      <Footer />
+      <Switch>
+        <Route path="/flex">
+          <FlexPage />
+        </Route>
+        {/*<Route path="/grid">*/}
+        {/*  <GridPage />*/}
+        {/*</Route>*/}
+        <Route path="*">
+          <TopPage />
+        </Route>
+      </Switch>
     </StyledApp>
   );
 }
