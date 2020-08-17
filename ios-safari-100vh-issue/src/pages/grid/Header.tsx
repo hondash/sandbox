@@ -16,7 +16,7 @@ const StyledHeader = styled.div`
   position: sticky;
   top: 0;
   color: whitesmoke;
-  background-color: darkred;
+  background-color: darkgreen;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

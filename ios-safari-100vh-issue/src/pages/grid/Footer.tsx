@@ -15,7 +15,7 @@ const StyledFooter = styled.div`
   position: sticky;
   bottom: 0; 
   color: whitesmoke;
-  background-color: darkred;
+  background-color: darkgreen;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
