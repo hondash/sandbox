@@ -1,5 +1,19 @@
 Demo: https://zen-liskov-a932e2.netlify.app/
 
+| | flex | grid |
+|---|---|---|
+| Android 5.x | ✔️ | ✔️ |
+| Android 6.x | ✔️ | ✔️ |
+| Android 7.x | ✔️ | ✔️ |
+| Android 8.x | ✔️ | ✔️ |
+| Android 9.x | ✔️ | ✔️ |
+| Android 10.x | ✔️ | ✔️ |
+| iOS 11 | ✔️ | not fill contents height if no scroll bar |
+| iOS 12 | ✔️ | ✔️ |
+| iOS 13 | ✔️ | ✔️ |
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
